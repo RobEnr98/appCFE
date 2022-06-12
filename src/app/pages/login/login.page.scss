@@ -1,0 +1,15 @@
+ion-button[disabled] {
+  --background: transparent;
+   --ion-color-base: #8e8e8e !important;
+   --box-shadow:none;
+}
+
+#container{
+  text-align: center;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-75%);
+}
+

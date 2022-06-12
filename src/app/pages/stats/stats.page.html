@@ -1,0 +1,17 @@
+<app-header titulo='Recibos enviados'></app-header>
+
+<ion-content>
+  <ion-list *ngFor="let s of stats; let i = index">
+    <ion-item>
+      <ion-icon slot="start" name="barcode"></ion-icon>
+      <ion-icon slot="end" name="reader" (click)="verStat(s.clave)"></ion-icon>
+      <ion-label>
+        <h2>{{ s.clave }}</h2>
+        <br>
+        <h4>{{ s.fecha }}</h4>
+        <h4>Importe total enviado:</h4>
+        <h4>${{ s.importe_total }}</h4>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,31 @@
+<ion-header>
+
+ </ion-header>
+
+<ion-content>
+  <form>
+    <div id="container">
+      <ion-grid class="ion-text-center">
+        <ion-row>
+          <ion-col>
+            <ion-item lines="full">
+              <ion-label position="floating">Usuario</ion-label>
+              <ion-input [(ngModel)]="user" [ngModelOptions]="{standalone: true}" type="text" (ionChange)="activarButton()" required></ion-input>
+            </ion-item>
+            <ion-item lines="full">
+              <ion-label position="floating">Contraseña</ion-label>
+              <ion-input [(ngModel)]="pass" [ngModelOptions]="{standalone: true}" type="password" (ionChange)="activarButton()" required></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-button [disabled]="!db1" (click)="validar()" type="submit" color="primary" expand="block">Sign In</ion-button>
+            <br>
+            <a class="small-text">¿Olvidaste tu contraseña?</a>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </form>
+</ion-content>

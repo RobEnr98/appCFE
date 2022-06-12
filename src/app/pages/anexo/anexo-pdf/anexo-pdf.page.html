@@ -1,0 +1,20 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-title>{{ archivo }}</ion-title>
+    <ion-button color="primary" expand="full" (click)="cerrarModal()">
+      Salir
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div style='position: relative; height: 100%;'>
+    <pdf-viewer src="{{ enlace }}"
+                [original-size]="false"
+                [render-text]='false'
+                [show-all]="true"
+                style="display: block; height: 500px;"
+                [fit-to-page]="true">
+    </pdf-viewer>
+  </div>
+</ion-content>

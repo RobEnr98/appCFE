@@ -1,0 +1,24 @@
+ion-slide >:first-child {
+  width: 95%;
+}
+
+ion-button[disabled] {
+  --background: transparent;
+   --ion-color-base: #8e8e8e !important;
+   --box-shadow:none;
+}
+
+.my-ion-list {
+  max-height: 150px;
+  --ion-item-background: transparent;
+}
+
+.my-ion-toolbar {
+  --background: transparent;
+  --ion-color-base: transparent !important;
+}
+
+.code_list {
+  max-height: 350px;
+  overflow-y: scroll;
+}

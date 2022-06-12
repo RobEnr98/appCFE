@@ -1,0 +1,6 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "appCFE",
+  "webDir": "www",
+  "bundledWebRuntime": false
+}

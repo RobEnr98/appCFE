@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/stats" ></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ keycode }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form>
+    <ion-list class="code_list">
+      <ion-item *ngFor="let s of stats, let i = index">
+        <ion-icon slot="start" name="barcode"></ion-icon>
+        <ion-label>
+          <h3>{{ s.codigo }}</h3>
+          <h4>${{ s.importe }}</h4>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </form>
+</ion-content>

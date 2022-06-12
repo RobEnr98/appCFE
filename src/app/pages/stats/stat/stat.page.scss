@@ -1,0 +1,14 @@
+.my-ion-list {
+  max-height: 150px;
+  --ion-item-background: transparent;
+}
+
+.my-ion-toolbar {
+  --background: transparent;
+  --ion-color-base: transparent !important;
+}
+
+.code_list {
+  max-height: 350px;
+  overflow-y: scroll;
+}
