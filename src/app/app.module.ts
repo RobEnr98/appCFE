@@ -10,10 +10,6 @@ import { BarcodeScanner } from '@awesome-cordova-plugins/barcode-scanner/ngx';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { DatePipe } from '@angular/common';
-import { DocumentViewer } from '@awesome-cordova-plugins/document-viewer/ngx';
-import { FileOpener } from '@awesome-cordova-plugins/file-opener/ngx';
-import { FileTransfer } from '@awesome-cordova-plugins/file-transfer/ngx';
-import { File } from '@awesome-cordova-plugins/file/ngx';
 
 @NgModule({
   declarations: [AppComponent],
@@ -29,10 +25,6 @@ import { File } from '@awesome-cordova-plugins/file/ngx';
   [
     BarcodeScanner,
     DatePipe,
-    DocumentViewer,
-    FileOpener,
-    FileTransfer,
-    File,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent],

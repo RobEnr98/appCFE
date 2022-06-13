@@ -2,12 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { AlertController, MenuController, ModalController, Platform } from '@ionic/angular';
 import { AnexoService } from '../../services/anexo.service';
 import { Anexo } from '../../models/anexo.model';
-import { DocumentViewer } from '@awesome-cordova-plugins/document-viewer/ngx';
-import { FileTransfer, FileTransferObject } from '@awesome-cordova-plugins/file-transfer/ngx';
-import { File } from '@awesome-cordova-plugins/file/ngx';
 import { AnexoPdfPage } from './anexo-pdf/anexo-pdf.page';
 import { Router } from '@angular/router';
-import { FileOpener } from '@awesome-cordova-plugins/file-opener/ngx';
 
 @Component({
   selector: 'app-anexo',
@@ -16,7 +12,6 @@ import { FileOpener } from '@awesome-cordova-plugins/file-opener/ngx';
 })
 export class AnexoPage implements OnInit {
 
-  fileTransfer: FileTransferObject;
   anexo: Anexo[] = [];
   id_user = localStorage.getItem("id_user");
   enlace = 'http://localhost:8080/file_anexo/';
